@@ -1,3 +1,3 @@
 # project-landing-page
 
-By the end of this project I should have a good understanding of flexbox properties and structuring a webpage.
+By the end of this project I hope to have a good understanding of styling a website and using flebox
