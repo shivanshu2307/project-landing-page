@@ -7,8 +7,34 @@ body{
 
 .header{
     display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 8px 16px;
+    align-items: center;
 }
+
 .logo{
-    max-width: 20%;
-    height: auto;
+    max-width: 8%;
+    max-height: auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header-links{
+    display: flex;
+    gap: 12px;
+}
+
+.title{
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 42px;
 }
