@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 body{
     height: 100vh;
@@ -13,9 +16,50 @@ body{
     align-items: center;
 }
 
+.section-1{
+    display: flex;
+    background-color: #1f2937;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-moon{
+    font-size: 42px;
+    color: aliceblue;
+    font-weight: 900;
+    max-width: 500px;
+}
+
+.about-moon-2{
+    font-size: 12px;
+    color: lightsteelblue;
+    max-width: 400px;
+}
+
+.sign-up{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: rgba(2, 162, 255, 0.877);
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .logo{
     max-width: 8%;
     max-height: auto;
+    border-radius: 20%;
 }
 
 li{
@@ -37,4 +81,11 @@ a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
     font-size: 42px;
+}
+
+.photo-1{
+    border-radius: 50%;
+    max-width: 12%;
+    max-height: auto;
+    padding: 16px;
 }
