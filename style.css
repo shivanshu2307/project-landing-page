@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;                       /*To reset the default sizes to zero*/
 }
 
 body{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -13,26 +16,29 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;                   /* Could use auto-margins alternatively */
     background-color: #1f2937;
-    padding: 8px 16px;
+    padding: 8px 24px;
     align-items: center;
 }
 
 .header-links a:hover{
     color: aquamarine;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    transition: 0.4s;                                   /*Didn't use background color it wasn't looking nice*/
 }
 
 .section-1{
     display: flex;
     background-color: #1f2937;
-    padding: 12px 0px;
+    padding: 24px 8px;
     justify-content: space-around;
     align-items: center;
 }
 
 .about-moon{
     font-size: 48px;
+    line-height: 1;
     color: #F9FAF8;
     font-weight: 900;
     max-width: 500px;
@@ -54,6 +60,11 @@ body{
     font-size: 16px;
     border: none;
     border-radius: 8px;
+}
+
+.sign-up:hover{
+    background-color: rgb(15, 182, 90);
+    transition: 0.5s;
 }
 
 .left-content{
@@ -85,7 +96,7 @@ a{
 
 .title{
     color: antiquewhite;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 42px;
 }
@@ -94,6 +105,7 @@ a{
     border-radius: 20%;
     max-width: 18%;
     max-height: auto;
+    border: 2px solid #7b38f6;
 }
 
 .section-2{
@@ -104,16 +116,18 @@ a{
 .section-2-heading{
     font-size: 36px;
     font-weight: 900;
+    font-family: 'Poppins', sans-serif;
     color: #1F2937;
     text-align: center;
-    padding: 24px 0 18px 0;
+    padding: 2rem 0 1.5rem 0;
 }
 
 .photo-2{
     width: 300px;
     height: 250px;
     border-radius: 12px;
-    border: 6px solid peachpuff;
+    border: 5px solid peachpuff;
+    box-shadow: 2px 2px 5px rgb(206, 135, 135);
 }
 
 .images{
@@ -130,7 +144,8 @@ a{
 }
 
 .captions > .subtext{
-    width: 300px;
+    width: 300px;                     /* Gave same width as images to align below them, could try grouping them together as flex items alternatively */
+    color: #333333;
 }
 
 .section-3{
@@ -147,13 +162,13 @@ a{
 
 .section-3 .speaker{
     font-weight: bold;
-    font-size: 14px;
-    margin-left: 500px;
+    font-size: 16px;
+    margin-left: 500px;                 /*Had to add a very specific margin to align this just below quote, flex item method was having issues*/
 }
 
 .section-3 .quote{
     width: 600px;
-    font-size: 18px;
+    font-size: 20px;
     color: #1F2937;
     font-style: italic;
 }
@@ -162,7 +177,7 @@ a{
     display: flex;
     background-color: #3882f6;
     min-height: 8rem;
-    margin: 4rem 12rem;
+    margin: 6rem 24rem;
     padding: 1.5rem 3rem;
     align-items: center;
     justify-content: center;
@@ -180,6 +195,11 @@ a{
     font-size: 16px;
     border: 2px solid white;
     border-radius: 8px;
+}
+
+.section-4 > .sign-up:hover{
+    background-color: rgb(15, 182, 90);
+    transition: 0.5s;
 }
 
 .section-4 > .content{
